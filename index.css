@@ -32,7 +32,7 @@ nav > span {
 main{
     /* background-color: #282D35; */
     padding: 60px 30px;
-    background-image: url(./images/reactlogohalf.png);
+    background-image: url(./src/reactlogohalf.png);
     background-repeat: no-repeat;
     background-position: right 70%;
     background-size: 210px auto;
