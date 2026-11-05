@@ -34,27 +34,25 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 60px;
+    padding: 110px 60px; /* Increased top/bottom padding from 60px to 110px to stop clipping */
     position: relative; 
     overflow: hidden;   
-    min-height: calc(100vh - 90px); /* Gives the page full height so the logos have breathing room */
+    min-height: calc(100vh - 90px);
     
-    /* Clean, vertically centered right logo */
     background-image: url(./src/reactlogohalf.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 210px auto;
 }
 
-/* Clean, vertically centered left logo */
 main::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 50%; /* Positions the middle of the element exactly in the center */
-    transform: translateY(-50%) scaleX(-1); /* Centers it vertically and flips it horizontally */
-    width: 105px; /* Exactly half of your 210px logo size */
-    height: 210px; /* Matches the background height scale */
+    top: 50%; 
+    transform: translateY(-50%) scaleX(-1); 
+    width: 105px; 
+    height: 210px; 
     background-image: url(./src/reactlogohalf.png);
     background-repeat: no-repeat;
     background-position: right center; 
