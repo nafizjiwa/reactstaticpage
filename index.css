@@ -34,12 +34,12 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 110px 60px; /* Increased top/bottom padding from 60px to 110px to stop clipping */
+    padding: 40px;
     position: relative; 
     overflow: hidden;   
     min-height: calc(100vh - 90px);
     
-    background-image: url(./src/reactlogohalf.png);
+    background-image: url(./images/reactlogohalf.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 210px auto;
@@ -51,15 +51,14 @@ main::before {
     left: 0;
     top: 50%; 
     transform: translateY(-50%) scaleX(-1); 
-    width: 105px; 
-    height: 210px; 
-    background-image: url(./src/reactlogohalf.png);
+    width: 200px; 
+    height: 300px; 
+    background-image: url(./images/reactlogohalf.png);
     background-repeat: no-repeat;
     background-position: right center; 
     background-size: 210px auto;
     pointer-events: none;
 }
-
 
 main > h1 {
     margin: 0;
