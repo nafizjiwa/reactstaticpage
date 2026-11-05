@@ -36,10 +36,29 @@ main{
     align-items: center;
     flex-direction: column;
     padding: 60px;
+    position: relative; /* Allows the left logo to align to the container edge */
+    overflow: hidden;   /* Keeps the logos from creating an accidental horizontal scrollbar */
+    
     background-image: url(./src/reactlogohalf.png);
     background-repeat: no-repeat;
     background-position: right 70%;
     background-size: 210px auto;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 70%; /* Matches your right-side logo height alignment */
+    transform: translateY(-50%) scaleX(-1); /* Centers vertically and flips the logo horizontally */
+    width: 105px; /* Exactly half of your 210px background-size */
+    height: 210px;
+    background-image: url(./src/reactlogohalf.png);
+    background-repeat: no-repeat;
+    background-position: right center; /* Grabs the straight cut-off edge of your source image */
+    background-size: 210px auto;
+    opacity: 1; /* Match visibility of main layout */
+    pointer-events: none; /* Allows clicks to pass through the image safely */
 }
 
 main > h1 {
