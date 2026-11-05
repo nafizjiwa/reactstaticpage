@@ -1,6 +1,6 @@
 
 
-import image from '../images/React-icon.svg';
+import image from '../src/React-icon.svg';
 import './Navbar.css';
 
 export default function Navbar(){
