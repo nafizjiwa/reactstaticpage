@@ -1,7 +1,7 @@
 
 
 import image from '../src/React-icon.svg';
-import './Navbar.css';
+
 
 export default function Navbar(){
     return (
