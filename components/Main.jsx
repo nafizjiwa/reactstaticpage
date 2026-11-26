@@ -3,7 +3,8 @@ export default function Main() {
     return (
 
         <main>
-            <h1>Learn something about React</h1>
+            <h1>Basic Static Page Built on REACT</h1>
+            <h3>REACT FUN FACTS</h3>
             <ul className="facts-list">
                 <li>React was released in 2013</li>
                 <li>React was created by Jordan Walke</li>
