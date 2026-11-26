@@ -4,7 +4,7 @@ export default function Main() {
 
         <main>
             <h1>Basic Static Page Built on REACT</h1>
-            <h3>REACT FUN FACTS</h3>
+            <h3>LEARN SOME FUN FACTS</h3>
             <ul className="facts-list">
                 <li>React was released in 2013</li>
                 <li>React was created by Jordan Walke</li>
